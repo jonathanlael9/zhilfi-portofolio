@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styling.css" />
+    <title>Zhilfi Linda Astika Portofolio</title>
+  </head>
+  <body>
+    <header class="site_header">
+      <div class="wrapper_inner">
+        <nav class="site_header_nav">
+          <ul role="list" class="flex flex_center">
+            <li><a href="#0">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#music">MUSIC</a></li>
+            <li><a href="#video">VIDEO</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="wrapper">
+          <div class="wrapper_inner">
+            <div class="text_center hero_content">
+                <h1 class="h2"><marquee class="marquee" behavior="scroll" direction="left">Selamat Datang di Website Saya</marquee></h1>
+              <h1 class="h2">Zhilfi Linda Astika</h1>
+              <p class="h5">NPM - 51421638</p>
+            </div>
+          </div>
+          <ul role="list" class="flex flex_between hero_social">
+            <address>Purbalingga, Jawa Tengah</address>
+            <ul role="list" class="flex">
+              <li>Find me online</li>
+              <li>
+                <a href="https://www.linkedin.com/in/zhilfilindaastika/?originalSubdomain=id" target="_blank">
+                  <img
+                    src="img/linkedin.png"
+                    alt="linkedin"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/zhilfilinda/" target="_blank">
+                  <img
+                    src="img/instagram.png"
+                    alt="instagram"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </section>
+      <section id="about">
+        <div class="wrapper">
+          <div class="text_center">
+            <h2 class="">
+              Saya adalah Mahasiswa Gunadarma Kalimalang Semester 8 Jurusan Teknik Informatika
+            </h2>
+          </div>
+          <div class="wrapper_inner">
+            <div class="about_content flex flex_around">
+              <figure class="about_figure text_center">
+                <img
+                  width="200px"
+                  height="250px"
+                  src="img/zhilfi.jpg"
+                  alt="Developer"
+                  class="about_img"
+                />
+                <figcaption class="about_caption">Zhilfi ❤️</figcaption>
+              </figure>
+              <p class="h5">
+                <span style="font-style: italic;">Lahir di Banjarnegara</span> <u> 25 Oktober 2003</u>
+                <br />
+                <span class="animated-text">Alamat saya Purbalingga, Jawa Tengah</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="music">
+        <div class="wrapper_inner">
+          <div class="text_centermusic">
+            <h2 class="h5" style="padding-bottom: 50px;">
+              Lagu Favorit Saya adalah Komang
+            </h2>
+            <div class="music-card">
+                <img src="img/komang.jpg" alt="Cover Lagu" class="cover">
+                <div class="info">
+                  <h3>Komang</h3>
+                  <p>Raim Laode</p>
+                </div>
+                <div class="progress-container">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="progress-bar" value="0" step="1" />
+                    <span id="duration">3.59</span>
+                  </div>
+                  
+                <div class="controls">
+                    <button onclick="rewind()">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+                        <path d="M11 18V6l-8.5 6L11 18zm1-12v12l8.5-6L12 6z"/>
+                      </svg>
+                    </button>
+                    <button onclick="togglePlay()">
+                      <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                      </svg>
+                    </button>
+                    <button onclick="forward()">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+                        <path d="M13 6v12l8.5-6L13 6zm-1 0L3.5 12 12 18V6z"/>
+                      </svg>
+                    </button>
+                  </div>
+                <audio id="audio" src="audio/KOMANG - RAIM LAODE LYRIC OFFICIAL.mp3" class="audio-hidden"></audio>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="video">
+        <div class="wrapper_inner">
+            <div class="text_centervideo">
+              <h2 class="h5" style="padding-bottom: 50px;">
+                Film Favorit Saya Spongebob
+              </h2>
+                <video width="1080" height="640" controls style="margin-left: px;">
+                    <source src="video/movie.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer>
+      <section id="footer">
+        <div class="wrapper">
+          <div class="text_right">
+            <p>&copy;  2025 Zhilfi Linda Astika</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="index.js">
+      </script>
+      
+  </body>
+</html>
